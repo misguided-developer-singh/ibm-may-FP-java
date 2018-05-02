@@ -1,5 +1,6 @@
 package com;
 
+@FunctionalInterface
 interface Scalable {
 	// implicitly public static final
 	double DEFAULT_SCALE = 1.0;
