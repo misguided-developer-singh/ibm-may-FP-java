@@ -12,7 +12,6 @@ interface Scalable {
 	static boolean isScalable(Object obj) {
 		return obj instanceof Scalable;
 	}
-
 	// implicitly public
 	default void resetScale() {
 		setScale(DEFAULT_SCALE);

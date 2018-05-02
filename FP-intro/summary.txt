@@ -1,0 +1,11 @@
+
+
+
+ FP in java
+ ---------------
+
+ --> we need lambda-expression to write function( specific-behavior like compare,add,.. )
+ --> we can write lambda expressions using Functional-interface ( type of Lambda )
+ --> we can skip parameter types in LE due to compiler's Type-Inference ability
+ --> Lambda expression can capture static, instance and local (must be effective final variables) from enclosing scope
+ --> Java runtime, will try to use same LE as much as possible instead of re-creating
