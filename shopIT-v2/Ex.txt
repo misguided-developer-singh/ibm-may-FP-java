@@ -1,0 +1,21 @@
+
+
+
+// shopIT
+------------------
+
+problem:
+---------
+
+   - input  : cart  e.g {"123123","234234"}
+   - output : totalPrice  e.g 100.00
+   
+-----------------------------------------   
+
+  component(s)
+  
+  	- Billing       -> getTotalPrice(cart) : double
+  	- PriceMatrix   -> getPrice(item) : double
+  	..........
+  	
+-------------------------------------------  	
