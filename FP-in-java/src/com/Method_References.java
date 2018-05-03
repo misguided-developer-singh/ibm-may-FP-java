@@ -31,6 +31,7 @@ public class Method_References {
 
 	public static void main(String[] args) {
 
+		// --------------------------------------------------------------------------
 		// Print print = () -> {
 		// Util.m();
 		// };
@@ -40,13 +41,14 @@ public class Method_References {
 		// Print print = Util::m;
 		// print.doPrint();
 
-		// --------------------------------------
+		// --------------------------------------------------------------------------
 
 		// Static method-references
 
 		Supplier<Thread> s1 = () -> {
 			return Thread.currentThread();
 		};
+		// --------------------------------------------------------------------------
 
 		// or
 
@@ -57,15 +59,14 @@ public class Method_References {
 		Consumer<String> consumer = (message) -> {
 			System.out.println(message);
 		};
+		// --------------------------------------------------------------------------
 
 		// or
 
 		Consumer<String> consumer2 = System.out::println;
 		consumer2.accept("welcome");
 
-		// ------------------------------------------
-
-		// instance method-references
+		// --------------------------------------------------------------------------
 
 		// Instance method (instance specified)
 		// Employee frank = new Employee("Frank", 3000);
@@ -78,6 +79,7 @@ public class Method_References {
 		// Supplier<Integer> supplier=frank::getSalary;
 		// System.out.println(supplier.get());
 
+		// --------------------------------------------------------------------------
 		// An instance method (instance not specified)
 		// Function<Employee, Integer> f1 = Employee::getSalary;
 		// Integer sal = f1.apply(frank);
@@ -89,7 +91,7 @@ public class Method_References {
 		// consumer3.accept(person, "hello");
 		// consumer3.accept(person, "hi");
 
-		// ------------------------------------------
+		// --------------------------------------------------------------------------
 
 		Comparator<Employee> byName = (e1, e2) -> {
 			return e1.getName().compareTo(e2.getName());
@@ -107,7 +109,7 @@ public class Method_References {
 		BiFunction<String, Integer, Employee> supplier = Employee::new;
 		Employee employee = supplier.apply("Nag", 1000);
 
-		//
+		// --------------------------------------------------------------------------
 	}
 
 	public static <T> void printAll(T[] array, Function<T, String> toStringFun) {
