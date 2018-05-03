@@ -8,13 +8,16 @@ public class Why_FP {
 
 	public static void main(String[] args) {
 
-		// -------------------------------------
+		// --------------------------------------------------------------------------
+
 		List<String> menu = new ArrayList<>();
 		menu.add("idly");
 		menu.add("poori");
 		menu.add("vada");
-		// -------------------------------------
-		// A. Imperative style ( what + how coding )
+
+		// --------------------------------------------------------------------------
+		// A. Imperative style ( 'what' + 'how' coding )
+
 		// Iterator<String> iterator = menu.iterator();
 		// while (iterator.hasNext()) {
 		// String item = (String) iterator.next();
@@ -22,10 +25,12 @@ public class Why_FP {
 		// iterator.remove();
 		// }
 		// System.out.println(menu);
-		// ------------------------------------
-		// B. Functional style ( what coding)
+
+		// --------------------------------------------------------------------------
+		// B. Functional style ( only 'what' coding)
+
 		menu.removeIf(item -> item.equals("poori"));
-		// ----------------------------------------
+		// --------------------------------------------------------------------------
 
 	}
 

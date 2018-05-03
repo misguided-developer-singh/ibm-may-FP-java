@@ -9,6 +9,8 @@ import java.util.function.Supplier;
 
 import com.model.Employee;
 
+//--------------------------------------------------------------------------
+
 interface Print {
 	void doPrint();
 }
@@ -48,6 +50,7 @@ public class Method_References {
 		Supplier<Thread> s1 = () -> {
 			return Thread.currentThread();
 		};
+
 		// --------------------------------------------------------------------------
 
 		// or
@@ -59,6 +62,7 @@ public class Method_References {
 		Consumer<String> consumer = (message) -> {
 			System.out.println(message);
 		};
+		
 		// --------------------------------------------------------------------------
 
 		// or
